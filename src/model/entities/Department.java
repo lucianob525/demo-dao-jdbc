@@ -7,12 +7,13 @@ public class Department implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
+	private Object obj;
 	
 	public Department() {
 	}
 	
-	public Department(int id, String name) {
-		this.id = id;
+	public Department(Object obj, String name) {
+		this.obj = obj;
 		this.name = name;
 	}
 
